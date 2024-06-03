@@ -10,8 +10,8 @@ module.exports = {
     async redirects() {
         return [
           {
-            source: '/((?!.swa).*)<YOUR MATCHING RULE>',
-            destination: '<YOUR REDIRECT RULE>', 
+            source: '/((?!.swa).*)',
+            destination: '/home', 
             permanent: false,
           },
         ]
@@ -23,8 +23,8 @@ module.exports = {
         return {
             beforeFiles: [
                 {
-                    source: '/((?!.swa).*)<YOUR MATCHING RULE>',
-                    destination: '<YOUR REWRITE RULE>', 
+                    source: '/((?!.swa).*)',
+                    destination: '/home', 
                 }
             ]
         }
